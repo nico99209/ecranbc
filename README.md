@@ -40,9 +40,33 @@ scripts/
 
 > Le player Pro Display doit avoir accès à Internet pour charger la page et la météo.
 
+Documentation interne Pro Display : [sites.google.com/view/affichage-dynamique](https://sites.google.com/view/affichage-dynamique)
+
+## 1 bis. Intégrer sur Google Sites (aperçu web)
+
+Le site [affichage-dynamique](https://sites.google.com/view/affichage-dynamique) sert de portail d'aide. Pour y ajouter un aperçu du tableau de bord :
+
+1. Ouvrez le site en mode **Édition**
+2. **Insérer → Intégrer → Code d'intégration**
+3. Collez ce code :
+
+```html
+<iframe
+  src="https://nico99209.github.io/ecranbc/display/"
+  width="100%"
+  height="720"
+  style="border:0; border-radius:12px;"
+  allowfullscreen
+></iframe>
+```
+
+4. Publiez la page
+
+> **Important pour l'écran TV** : dans Pro Display, utilisez l'URL directe GitHub Pages (`…/display/`), pas l'URL Google Sites. Le player charge ainsi la page sans passer par un iframe intermédiaire.
+
 ## 2. Configurer Pro Display
 
-Connectez-vous sur [tv-pro-display.adyn.cloud](https://tv-pro-display.adyn.cloud/) puis :
+Connectez-vous sur [tv-pro-display.adyn.cloud](https://tv-pro-display.adyn.cloud/) (voir aussi le [guide interne](https://sites.google.com/view/affichage-dynamique)) puis :
 
 ### Option A — Page complète (recommandée)
 
