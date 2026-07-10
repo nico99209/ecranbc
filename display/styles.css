@@ -75,6 +75,10 @@ body {
   flex-shrink: 0;
   width: 4.5rem;
   height: 4.5rem;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 0.35rem;
+  object-fit: contain;
 }
 
 .brand-text {
