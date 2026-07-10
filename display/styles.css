@@ -7,11 +7,13 @@
 }
 
 :root {
-  --bg: #0b1220;
-  --bg-panel: rgba(18, 28, 48, 0.92);
-  --bg-panel-strong: rgba(24, 38, 64, 0.96);
-  --accent: #3b82f6;
-  --accent-soft: rgba(59, 130, 246, 0.18);
+  --brand: #1d5fa3;
+  --brand-rgb: 29, 95, 163;
+  --bg: #0a0f18;
+  --bg-panel: rgba(12, 20, 36, 0.92);
+  --bg-panel-strong: rgba(16, 28, 48, 0.96);
+  --accent: var(--brand);
+  --accent-soft: rgba(var(--brand-rgb), 0.2);
   --accent-warm: #f59e0b;
   --text: #f8fafc;
   --text-muted: #94a3b8;
@@ -27,8 +29,8 @@ body {
   overflow: hidden;
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(59, 130, 246, 0.22), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.12), transparent 24%),
+    radial-gradient(circle at top left, rgba(var(--brand-rgb), 0.24), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(var(--brand-rgb), 0.1), transparent 24%),
     var(--bg);
   color: var(--text);
 }
@@ -64,6 +66,24 @@ body {
 
 .header {
   padding: 2rem 2.2rem 1.4rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(var(--brand-rgb), 0.35);
+}
+
+.brand-text {
+  min-width: 0;
 }
 
 .company {
@@ -152,7 +172,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.22), rgba(245, 158, 11, 0.14));
+  background: linear-gradient(135deg, rgba(var(--brand-rgb), 0.28), rgba(var(--brand-rgb), 0.1));
 }
 
 .birthday-hero.empty {
