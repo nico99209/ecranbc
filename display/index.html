@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BC NORD · Écran bureau</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="screen">
+      <section class="left-column">
+        <header class="panel header">
+          <div id="company" class="company">BC NORD</div>
+          <div id="tagline" class="tagline">Bienvenue au bureau</div>
+        </header>
+
+        <section class="panel clock-panel">
+          <div id="time" class="time">--:--</div>
+          <div id="date" class="date">Chargement...</div>
+        </section>
+
+        <section class="panel weather-panel">
+          <div id="weather-icon" class="weather-icon" aria-hidden="true">🌡️</div>
+          <div>
+            <div id="weather-city" class="weather-city">Lille</div>
+            <div id="weather-temp" class="weather-temp">--°C</div>
+            <div id="weather-desc" class="weather-desc">Chargement météo...</div>
+            <div id="weather-range" class="weather-range"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="right-column">
+        <section id="birthday-hero" class="panel birthday-hero">
+          <div id="hero-label" class="hero-label">Anniversaires</div>
+          <h1 id="hero-title" class="hero-title">Chargement...</h1>
+          <p id="hero-subtitle" class="hero-subtitle"></p>
+        </section>
+
+        <section class="panel upcoming-panel">
+          <h2 class="section-title">À venir</h2>
+          <ul id="upcoming-list" class="upcoming-list"></ul>
+        </section>
+      </section>
+    </main>
+
+    <div id="footer-note" class="footer-note"></div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
