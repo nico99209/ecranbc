@@ -71,14 +71,22 @@ body {
   gap: 1.25rem;
 }
 
-.logo {
+.logo-wrap {
   flex-shrink: 0;
   width: 4.5rem;
   height: 4.5rem;
   background: #ffffff;
   border-radius: 50%;
-  padding: 0.35rem;
-  object-fit: contain;
+  overflow: hidden;
+}
+
+.logo {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: none;
+  object-position: left center;
 }
 
 .brand-text {
