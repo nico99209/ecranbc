@@ -73,20 +73,16 @@ body {
 
 .logo-wrap {
   flex-shrink: 0;
-  width: 4.5rem;
-  height: 4.5rem;
+  display: inline-block;
   background: #ffffff;
-  border-radius: 50%;
-  overflow: hidden;
+  border-radius: 0.35rem;
+  line-height: 0;
 }
 
 .logo {
   display: block;
-  height: 100%;
+  height: 4.5rem;
   width: auto;
-  max-width: none;
-  object-fit: none;
-  object-position: left center;
 }
 
 .brand-text {
